@@ -1,0 +1,170 @@
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    margin: 0;
+}
+
+@keyframes slidein {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(100%);
+    }
+}
+
+.linktree {
+    background-color: rgb(22, 139, 155);
+    margin: auto;
+    overflow: hidden;
+    background-color: #01094e
+}
+
+.linktree a {
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    position: relative;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: aqua;
+    top: 0;
+}
+
+ul {
+    display: flex;
+
+}
+
+.img-left {
+    overflow: hidden;
+    left: 0;
+    border: #1f80b8 solid;
+    width: 20%;
+    justify-content: space-between;
+    position: relative;
+    background: linear-gradient(-135deg, #257aac, #01094e);
+}
+
+iframe {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.body-right {
+    overflow: hidden;
+    width: 220px;
+    right: 0;
+    border: #1f80b8 solid;
+    width: 20%;
+    position: relative;
+    background: linear-gradient(135deg, #257aac, #01094e);
+}
+
+.content {
+    max-width: 800px;
+    margin: 0;
+    top: 0;
+    width: 60%;
+    text-align: center;
+    background: linear-gradient(#5eb6e9, #3b4fff);
+    overflow: hidden;
+}
+
+.h1 {
+    color: #333;
+}
+
+.day_wrapper {
+    display: flex;
+}
+
+.dayname {
+    border: 2px rgb(87, 8, 24) solid;
+    height: 5vh;
+    width: 14.3%;
+}
+
+.dayname::before {
+    content: attr(dayname);
+    display: flex;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.day::before {
+    content: attr(day);
+    display: flex;
+    height: 20px;
+    width: 20px;
+    border: black 1px solid;
+}
+
+.day {
+    border: 2px black solid;
+    height: 10vh;
+    width: 14.3%;
+}
+
+.week {
+    display: flex;
+    border: 2px solid rgb(100, 0, 20);
+    height: 10vh;
+}
+
+.calendar {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 70vh;
+    align-items: center;
+}
+
+@media screen and (min-width: 200px) and (max-width: 1024px) {
+
+    .day {
+        height: 10vh;
+        border: 2px rgb(133, 0, 126) solid;
+    }
+
+    .week {
+        height: 10vh;
+    }
+
+    .calendar {
+        width: 70%;
+        background-color: aqua;
+        height: auto;
+    }
+
+    .linktree {
+        width: auto;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 2048px) {
+
+    .day {
+        height: 15vh;
+        border: 2px rgb(133, 0, 126) solid;
+    }
+
+    .week {
+        height: 15vh;
+    }
+
+    .calendar {
+        width: 90%;
+        background-color: aqua;
+        height: auto;
+        align-items: center;
+    }
+
+
+}
